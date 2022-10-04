@@ -32,7 +32,7 @@ h1 {
 
 .main-body {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     gap: 6em;
     flex-wrap: wrap;
@@ -41,9 +41,19 @@ h1 {
 
 .settings {
     display: flex;
-    flex-direction: column;
-    justify-self: flex-start;
+    flex-direction: row;
+    gap: 16px;
+    justify-content: space-between;
 }
+
+.color-settings, .eraser-tool, .size-picker {
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 5px 15px;
+    flex: 1;
+    flex-basis: 100%;
+}
+
 #sketch {
     width: 500px;
     height: 500px;
